@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-
+import SwiftData
 @main
 struct SimpleContactsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            AppView()
+        }.modelContainer(for: Person.self)
     }
 }
